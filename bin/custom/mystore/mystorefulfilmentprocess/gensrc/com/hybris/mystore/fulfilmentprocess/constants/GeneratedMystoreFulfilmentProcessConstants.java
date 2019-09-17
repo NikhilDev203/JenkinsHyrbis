@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Aug 2, 2019 2:33:36 AM                      ---
+ * --- Generated at Aug 19, 2019 4:54:49 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.hybris.mystore.fulfilmentprocess.constants;

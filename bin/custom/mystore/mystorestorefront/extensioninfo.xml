@@ -12,6 +12,8 @@
 
 	<extension abstractclassprefix="Generated" classprefix="MystoreStorefront" name="mystorestorefront" usemaven="false">		
         <requires-extension name="smarteditaddon"/>
+<requires-extension name="assistedservicestorefront"/>
+
 <requires-extension name="personalizationsearchsamplesaddon"/>
 <requires-extension name="pcmbackofficesamplesaddon"/>
 <requires-extension name="multicountrysampledataaddon"/>
@@ -19,7 +21,7 @@
 <requires-extension name="orderselfserviceaddon"/>
 <requires-extension name="customerticketingaddon"/>
 <requires-extension name="assistedservicepromotionaddon"/>
-<requires-extension name="assistedservicestorefront"/>
+
 <requires-extension name="textfieldconfiguratortemplateaddon"/>
 
 <requires-extension name="promotionenginesamplesaddon"/>
