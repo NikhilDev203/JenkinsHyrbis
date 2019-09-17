@@ -8,10 +8,6 @@
     <extension name='commerceservicesbackoffice' />
     <extension name='solrfacetsearchbackoffice' />
     <extension name='solrserver' />
-	<!-- <extension name='yacceleratorbackoffice' />
-    <extension name='yacceleratorinitialdata' />
-    <extension name='yacceleratorfulfilmentprocess' />
-    <extension name='yacceleratorstorefront' /> -->
     <extension name='ycommercewebservices' />
     <extension name='ycommercewebservicestest' />
     <extension name='electronicsstore' />
@@ -27,12 +23,8 @@
     <extension name='couponfacades' />
     <extension name='couponservices' />
     <extension name='promotionenginesamplesaddon' />
-    <extension name='cmswebservices' />
-    <extension name='smarteditwebservices' />
     <extension name='cmssmarteditwebservices' />
     <extension name='permissionswebservices' />
-    <extension name='smarteditaddon' />
-    <extension name='cmssmartedit' />
     <extension name='cmsbackoffice' />
     <extension name='multicountrysampledataaddon' />
     <extension name='cmsoccaddon' />
@@ -62,34 +54,20 @@
     <extension name='odata2webservicesfeaturetests' />
     <extension name='kymaintegrationbackoffice' />
     <extension name='kymaintegrationsampledata' />
-
+	<!-- Mystore -->
 	<extension name='mystorebackoffice' />
 	<extension name='mystorecore' />
 	<extension name='mystorefacades' />
 	<extension name='mystorefulfilmentprocess' />
 	<extension name='mystoreinitialdata' />
 	<extension name='mystorestorefront' />
-
-    <!-- SmartEdit -->
-    <extension name='previewwebservices' />
-    <extension name='oauth2' /> 
-	<extension name="backofficesolrsearch" />
+	<!-- SmartEdit -->
+	<extension name="smarteditaddon" />
+	<extension name="smarteditwebservices" />
+	<extension name="cmssmartedit" />
+	<extension name="cmswebservices" />
 	<extension name="npmtestancillary" />
-	<extension name="b2bacceleratoraddon"/>
-	 <!-- <extension name="mystorefulfilmentprocess"/> -->
-    <!-- <extension name="mystorecockpits"/> -->
-   <!--  <extension name="mystorecore"/>
-    <extension name="mystorefacades"/> -->
-    <!-- <extension name="mystoretest"/> -->
-  <!--   <extension name="mystoreinitialdata"/>
-    <extension name="mystorestorefront"/> 
-	<extension name='mystorebackoffice' /> -->
-	 <!-- B2B Accelator -->
-	<!--  <extension name='powertoolsstore' />
-	<extension name='b2bcommercebackoffice' />
-	<extension name='b2badmincockpit' />
-	<extension name='b2bacceleratoraddon' />
-	<extension name='commerceorgaddon' /> -->
+
   
   </extensions>
 </hybrisconfig>
