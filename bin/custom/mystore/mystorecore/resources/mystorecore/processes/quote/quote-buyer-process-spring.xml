@@ -21,7 +21,7 @@
 
     <alias name="defaultQuoteBuyerSubmitAction" alias="quoteBuyerSubmitAction"/>
     <bean id="defaultQuoteBuyerSubmitAction"
-          class="com.hybris.mystore.core.actions.quote.QuoteBuyerSubmitAction"
+          class="com.hybris.core.actions.quote.QuoteBuyerSubmitAction"
           parent="abstractAction">
         <property name="commerceQuoteService" ref="commerceQuoteService"/>
         <property name="quoteService" ref="quoteService"/>

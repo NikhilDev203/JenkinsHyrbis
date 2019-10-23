@@ -26,7 +26,7 @@
 
 	<!-- tenant scoped filter -->
 
-	<bean id="storefrontTenantFilterChain" class="com.hybris.mystore.storefront.filters.UrlPathFilter" >
+	<bean id="storefrontTenantFilterChain" class="com.hybris.storefront.filters.UrlPathFilter" >
 		<property name="defaultFilter" ref="storefrontTenantDefaultFilterChain"/>
 		<property name="urlPathHelper">
 			<bean class="org.springframework.web.util.UrlPathHelper"/>
@@ -107,7 +107,7 @@
 		<property name="addContextPath" value="true"/>
 	</bean>
 
-	<bean id="urlEncoderFilter" class="com.hybris.mystore.storefront.filters.UrlEncoderFilter" >
+	<bean id="urlEncoderFilter" class="com.hybris.storefront.filters.UrlEncoderFilter" >
 		<property name="urlEncoderFacade" ref="urlEncoderFacade"/>
 		<property name="sessionService" ref="sessionService"/>
 	</bean>
@@ -116,13 +116,13 @@
 		<property name="sessionService" ref="sessionService"/>
 	</bean>
 
-	<bean id="addOnDevelopmentFilter" class="com.hybris.mystore.storefront.filters.AcceleratorAddOnFilter" >
+	<bean id="addOnDevelopmentFilter" class="com.hybris.storefront.filters.AcceleratorAddOnFilter" >
 		<property name="configurationService" ref="configurationService"/>	
 	</bean>
 
-	<bean id="requestLoggerFilter" class="com.hybris.mystore.storefront.filters.RequestLoggerFilter"/>
+	<bean id="requestLoggerFilter" class="com.hybris.storefront.filters.RequestLoggerFilter"/>
 
-	<bean id="cmsSiteFilter" class="com.hybris.mystore.storefront.filters.cms.CMSSiteFilter" >
+	<bean id="cmsSiteFilter" class="com.hybris.storefront.filters.cms.CMSSiteFilter" >
 		<property name="previewDataModelUrlResolver" ref="previewDataModelUrlResolver"/>
 		<property name="cmsSiteService" ref="cmsSiteService"/>
 		<property name="cmsPreviewService" ref="cmsPreviewService"/>
@@ -148,14 +148,14 @@
 		<value>/**/cart/export</value>
 	</util:set>
 	
-	<bean id="storefrontFilter" class="com.hybris.mystore.storefront.filters.StorefrontFilter" >
+	<bean id="storefrontFilter" class="com.hybris.storefront.filters.StorefrontFilter" >
 		<property name="storeSessionFacade" ref="storeSessionFacade"/>
 		<property name="browseHistory" ref="browseHistory"/>
 		<property name="refererExcludeUrlSet" ref="refererExcludeUrlSet"/>
 		<property name="pathMatcher" ref="defaultPathMatcher"/>
 	</bean>
 	
-	<bean id="cartRestorationFilter" class="com.hybris.mystore.storefront.filters.CartRestorationFilter" >
+	<bean id="cartRestorationFilter" class="com.hybris.storefront.filters.CartRestorationFilter" >
 		<property name="baseSiteService" ref="baseSiteService"/>
 		<property name="cartService" ref="cartService"/>
 		<property name="cartFacade" ref="cartFacade"/>
@@ -164,11 +164,11 @@
 		<property name="sessionService" ref="sessionService"/>	
 	</bean>
 
-	<bean id="anonymousCheckoutFilter" class="com.hybris.mystore.storefront.filters.AnonymousCheckoutFilter" >
+	<bean id="anonymousCheckoutFilter" class="com.hybris.storefront.filters.AnonymousCheckoutFilter" >
 		<property name="guestCheckoutCartCleanStrategy"  ref="guestCheckoutCartCleanStrategy" />
 	</bean>
 
-	<bean id="customerLocationRestorationFilter" class="com.hybris.mystore.storefront.filters.CustomerLocationRestorationFilter" >
+	<bean id="customerLocationRestorationFilter" class="com.hybris.storefront.filters.CustomerLocationRestorationFilter" >
 		<property name="customerLocationFacade" ref="customerLocationFacade"/>
 		<property name="customerLocationCookieGenerator" ref="customerLocationCookieGenerator"/>
 	</bean>
@@ -178,7 +178,7 @@
 		<entry key="/import/csv/*" value-ref="importCSVMultipartFilter"/>
 	</util:map>
 
-	<bean id="fileUploadFilter" class="com.hybris.mystore.storefront.filters.FileUploadFilter" >
+	<bean id="fileUploadFilter" class="com.hybris.storefront.filters.FileUploadFilter" >
 		<property name="urlFilterMapping">
 			<ref bean="fileUploadUrlFilterMappings" />
 		</property>
@@ -186,7 +186,7 @@
 	</bean>
 
 	<alias name="defaultSessionCookieGenerator" alias="sessionCookieGenerator"/>
-	<bean id="defaultSessionCookieGenerator" class="com.hybris.mystore.storefront.security.cookie.EnhancedCookieGenerator" >
+	<bean id="defaultSessionCookieGenerator" class="com.hybris.storefront.security.cookie.EnhancedCookieGenerator" >
 		<property name="cookieSecure" value="true"/>
 		<property name="cookieName" value="JSESSIONID"/>
 		<property name="cookieMaxAge" value="-1"/>
@@ -195,7 +195,7 @@
 	</bean>
 	
 	<alias name="defaultCartRestoreCookieGenerator" alias="cartRestoreCookieGenerator"/>
-	<bean id="defaultCartRestoreCookieGenerator" class="com.hybris.mystore.storefront.security.cookie.CartRestoreCookieGenerator" >
+	<bean id="defaultCartRestoreCookieGenerator" class="com.hybris.storefront.security.cookie.CartRestoreCookieGenerator" >
 		<property name="cookieSecure" value="true"/>
 		<property name="cookieMaxAge" value="360000000"/>
 		<property name="useDefaultPath" value="false"/>
@@ -204,7 +204,7 @@
 	</bean>
 
 	<alias name="defaultCustomerLocationCookieGenerator" alias="customerLocationCookieGenerator"/>
-	<bean id="defaultCustomerLocationCookieGenerator" class="com.hybris.mystore.storefront.security.cookie.CustomerLocationCookieGenerator" >
+	<bean id="defaultCustomerLocationCookieGenerator" class="com.hybris.storefront.security.cookie.CustomerLocationCookieGenerator" >
 		<property name="cookieSecure" value="true"/>
 		<property name="cookieMaxAge" value="360000000"/>
 		<property name="useDefaultPath" value="false"/>
@@ -213,7 +213,7 @@
 	</bean>
 	
 	<alias name="defaultCookieNotificationCookieGenerator" alias="cookieNotificationCookieGenerator"/>
-	<bean id="defaultCookieNotificationCookieGenerator" class="com.hybris.mystore.storefront.security.cookie.CookieNotificationCookieGenerator" >
+	<bean id="defaultCookieNotificationCookieGenerator" class="com.hybris.storefront.security.cookie.CookieNotificationCookieGenerator" >
 		<property name="cookieSecure" value="true"/>
 		<property name="cookieMaxAge" value="360000000"/>
 		<property name="useDefaultPath" value="true"/>

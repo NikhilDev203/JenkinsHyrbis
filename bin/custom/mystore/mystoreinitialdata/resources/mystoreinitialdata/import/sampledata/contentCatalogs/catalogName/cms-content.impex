@@ -23,9 +23,9 @@ $image=image(code, $contentCV);
 $media=media(code, $contentCV);
 $page=page(uid, $contentCV);
 $contentPage=contentPage(uid, $contentCV);
-$siteResource=jar:com.hybris.mystore.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/contentCatalogs/$contentCatalog
-$productResource=jar:com.hybris.mystore.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/productCatalogs/$productCatalog
-$jarResourceCms=jar:com.hybris.mystore.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/cockpits/cmscockpit
+$siteResource=jar:com.hybris.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/contentCatalogs/$contentCatalog
+$productResource=jar:com.hybris.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/productCatalogs/$productCatalog
+$jarResourceCms=jar:com.hybris.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/cockpits/cmscockpit
 
 
 # CMS Site Settings

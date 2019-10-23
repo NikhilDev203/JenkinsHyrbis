@@ -9,7 +9,7 @@
  Information and shall use it only in accordance with the terms of the
  license agreement you entered into with SAP.
 -->
-<action-definition id="com.hybris.mystore.backoffice.actions.confirmpickupaction"
+<action-definition id="com.hybris.backoffice.actions.confirmpickupaction"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/action-definition.xsd">
 	
@@ -18,7 +18,7 @@
 	<author>hybris</author>
 	<version>1.0</version>
 	
-	<actionClassName>com.hybris.mystore.backoffice.actions.ConfirmPickupAction</actionClassName>
+	<actionClassName>com.hybris.backoffice.actions.ConfirmPickupAction</actionClassName>
 
 	
     <inputType>de.hybris.platform.ordersplitting.model.ConsignmentModel</inputType>

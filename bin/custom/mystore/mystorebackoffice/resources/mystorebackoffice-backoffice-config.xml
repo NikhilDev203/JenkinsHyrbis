@@ -16,7 +16,7 @@
 		<y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris">
 			<y:group qualifier="common">
 				<y:label>actiongroup.common</y:label>				
-				<y:action action-id="com.hybris.mystore.backoffice.actions.confirmpickupaction" property="currentObject"/>				
+				<y:action action-id="com.hybris.backoffice.actions.confirmpickupaction" property="currentObject"/>				
 			</y:group>
 		</y:actions>
     </context>

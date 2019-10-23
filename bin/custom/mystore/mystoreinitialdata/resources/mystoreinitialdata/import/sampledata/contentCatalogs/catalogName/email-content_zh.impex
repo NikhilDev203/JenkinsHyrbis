@@ -17,8 +17,8 @@ $contentCatalog=__CONTENT_CATALOG_NAME__
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 $picture=media(code, $contentCV);
 $wideContent=CMSImageComponent,BannerComponent
-$jarResource=jar:com.hybris.mystore.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import
-$siteResource=jar:com.hybris.mystore.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/contentCatalogs/$contentCatalog
+$jarResource=jar:com.hybris.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import
+$siteResource=jar:com.hybris.initialdata.setup.InitialDataSystemSetup&/mystoreinitialdata/import/contentCatalogs/$contentCatalog
 
 # Language
 $lang=zh

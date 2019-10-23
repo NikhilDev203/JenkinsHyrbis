@@ -22,7 +22,7 @@
 	<!-- System Setup -->
 
 	<bean id="yAcceleratorInitialDataSystemSetup"
-	      class="com.hybris.mystore.initialdata.setup.InitialDataSystemSetup"
+	      class="com.hybris.initialdata.setup.InitialDataSystemSetup"
 	      parent="abstractCoreSystemSetup">
 		<property name="coreDataImportService" ref="coreDataImportService"/>
 		<property name="sampleDataImportService" ref="sampleDataImportService"/>

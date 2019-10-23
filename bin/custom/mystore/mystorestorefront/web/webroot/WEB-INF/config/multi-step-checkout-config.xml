@@ -22,7 +22,7 @@
 		
 	<context:annotation-config/>
 
-	<context:component-scan  base-package="com.hybris.mystore.storefront.controllers.pages.checkout" scope-resolver="de.hybris.platform.spring.IgnoreTenantScopeMetadataResolver" />
+	<context:component-scan  base-package="com.hybris.storefront.controllers.pages.checkout" scope-resolver="de.hybris.platform.spring.IgnoreTenantScopeMetadataResolver" />
 	
 	<!-- Checkout Steps -->
 
@@ -305,18 +305,18 @@
 		<property name="checkoutFacade" ref="checkoutFacade"/>
 	</bean>
 
-	<bean id="defaultMultiStepCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultMultiStepCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="deliveryAddressCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultDeliveryAddressCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="deliveryMethodCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultDeliveryMethodCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultPaymentMethodCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultPaymentCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultPickupCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultPickupCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultSummaryCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.DefaultSummaryCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultMultiStepCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultMultiStepCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="deliveryAddressCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultDeliveryAddressCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="deliveryMethodCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultDeliveryMethodCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultPaymentMethodCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultPaymentCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultPickupCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultPickupCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultSummaryCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.DefaultSummaryCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
 
-	<bean id="defaultResponsiveMultiStepCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.ResponsiveMultiStepCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultResponsiveDeliveryAddressCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.ResponsiveDeliveryAddressCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultResponsiveDeliveryMethodCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.ResponsiveDeliveryMethodCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultResponsivePaymentMethodCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.ResponsivePaymentCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
-	<bean id="defaultResponsiveSummaryCheckoutValidator" class="com.hybris.mystore.storefront.checkout.steps.validation.impl.ResponsiveSummaryCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultResponsiveMultiStepCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.ResponsiveMultiStepCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultResponsiveDeliveryAddressCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.ResponsiveDeliveryAddressCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultResponsiveDeliveryMethodCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.ResponsiveDeliveryMethodCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultResponsivePaymentMethodCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.ResponsivePaymentCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
+	<bean id="defaultResponsiveSummaryCheckoutValidator" class="com.hybris.storefront.checkout.steps.validation.impl.ResponsiveSummaryCheckoutStepValidator" parent="abstractCheckoutStepValidator" />
 	
 	<!--Validation-->
 

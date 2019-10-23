@@ -28,9 +28,9 @@
 
 <classpathentry combineaccessrules="false" kind="src" path="/commerceorgsamplesaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/promotionenginesamplesaddon"/>
-
+<classpathentry combineaccessrules="false" kind="src" path="/smarteditaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/textfieldconfiguratortemplateaddon"/>
-
+<classpathentry combineaccessrules="false" kind="src" path="/assistedservicestorefront"/>
 <classpathentry combineaccessrules="false" kind="src" path="/assistedservicepromotionaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/customerticketingaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/orderselfserviceaddon"/>
@@ -38,8 +38,5 @@
 <classpathentry combineaccessrules="false" kind="src" path="/multicountrysampledataaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/pcmbackofficesamplesaddon"/>
 <classpathentry combineaccessrules="false" kind="src" path="/personalizationsearchsamplesaddon"/>
-
-<classpathentry combineaccessrules="false" kind="src" path="/assistedservicestorefront"/>
-<classpathentry combineaccessrules="false" kind="src" path="/smarteditaddon"/>
 				
 </classpath>
